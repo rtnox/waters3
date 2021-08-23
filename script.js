@@ -109,10 +109,10 @@ window.addEventListener("load", () => {
             if (code === "void 0}") bracketsCount--;
             jsCode += code;
         }
-        alert(bracketsCount)
+      
         if (bracketsCount > 0) jsCode = jsCode + "}".repeat(bracketsCount);
         if (bracketsCount < 0) jsCode = "{".repeat(-bracketsCount) + jsCode;
-        alert((jsCode + "0;").replace(/;/g, ";\n"))
+ 
         try{eval(jsCode + "0;");} catch{output.innerHTML="<span style='color:red'>エラー</span>"}
     })
     
