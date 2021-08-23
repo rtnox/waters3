@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(#0a8, #05a);
+    font-size: 0.8em;
     height: 100vh;
     margin: 0;
     overflow: hidden;
